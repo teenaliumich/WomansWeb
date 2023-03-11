@@ -1,0 +1,223 @@
+body{
+	margin: 0px;
+  padding: 0px;
+	background-color: #FFFFFF;
+	font-size: 125%;
+}
+
+p {
+  font-family: "Calibri", sans-serif;
+  margin: 10px;
+  padding: 5px 25px 5px 25px
+}
+
+header{
+  margin-bottom: 50px;
+  padding: 0px;
+}
+
+h1{
+  margin-bottom: 30px;
+  margin-left: 30px;
+  padding-top: 30px;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2, dt{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  font-weight: normal;
+  font-size: 1.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3, dd{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  font-weight: normal;
+  font-size: 1em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul {
+  margin-left: 30px;
+  
+}
+ul#alphabet {
+  display: flex;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #DE492F;
+  width: 100%;
+}
+
+nav ul{
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+a:visited{
+    color: black
+}
+
+nav a.active{
+    text-decoration: underline;
+}
+  
+li a {
+  display: inline-block;
+  color: #212121;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #E0664E;
+}
+
+img{
+  padding-top: 10;
+  width: 300px;
+  margin: auto;
+  display: block;
+  border-radius: 2%;
+}
+
+img:nth-child(2n){
+  border: 5px solid #f9dede;
+}
+
+div:nth-child(2n) img{
+  border: 5px solid black;
+}
+
+img:hover{
+  box-shadow: 0 0 0 8px #e31c3d;
+  transition: .5s ease;
+}
+
+img#womenmarch{
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: 100%;
+}
+
+.grid{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  max-width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.literature, .history, .dictionary {
+  align-self: top;
+  background-color: #FFFFFF;
+  border: 2px solid #DE492F;
+  border-radius: 10px;
+}
+.fa-solid{
+  padding-right: 10px;
+}
+
+footer{
+  padding-top: 30px;
+  background-color: #DE492F;
+  background-image: url(../images/pattern-07.jpg);
+  color: #212121;
+  padding: 30px 0;
+}
+
+footer a{
+  margin-left: 30px;
+  color: #212121;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.footer-info {
+  flex-grow: 0px;
+  flex-shrink: 0px;
+}
+
+img#icon {
+  width: 100px;
+}
+
+
+/* Button CSS */
+button {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+@keyframes button{
+  0% { transform: translateX(0) }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
+}
+
+button:hover {
+  background-color: #f7fafa;
+}
+@media (prefers-reduced-motion: reduce) {
+  button {
+    animation: none;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+button{
+  animation-name: button;
+  animation: horizontal-shaking 0.35s infinite;
+}
+@keyframes button{
+  0% { transform: translateX(0) }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
+}
+}
